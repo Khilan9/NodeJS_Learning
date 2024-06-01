@@ -1,0 +1,9 @@
+Flow for short url service
+
+user go to homepage
+Enter url in ui for which he would like to create shorturl
+click on submit button
+send request to backend to generate and to store short url.
+    generate short url and check if short url exist? if not then store the same 
+Now any user can hit that short URL 
+    fetch destination url for this short url and redirect user
