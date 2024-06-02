@@ -8,7 +8,7 @@ const staticRoute = require('./routes/staticRouter');
 const userRoute = require('./routes/user');
 const cookieParser = require('cookie-parser');
 const { MongoDBConnect } = require("./connections");
-const { restrictToLoggedinUserOnly, checkAuth } = require("./middlewares/auth");
+const { restrictToLoggedinUserOnly, checkAuth, checkForAuthentication, restrictTo } = require("./middlewares/auth");
 
 // Connect mongodb using below URL
 MongoDBConnect("mongodb://127.0.0.1:27017/myurldb");
@@ -18,12 +18,13 @@ app.set('views', path.resolve('./views'));
 
 app.use(middlewares.useURLEncoder());
 app.use(cookieParser());
+app.use(checkForAuthentication);
 app.use(express.json());
 
 // User router
 app.use('/',checkAuth,staticRoute);
 app.use('/user',userRoute);
-app.use("/url", restrictToLoggedinUserOnly, urlRouter);
+app.use("/url", restrictTo(["NORMAL"]), urlRouter);
 
 app.listen(port, () =>
   console.log(`Shortning URL Service started on port ${port}!`)
