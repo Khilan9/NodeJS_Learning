@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 const userRouter = require('./routes/user');
 const middlewares = require('./middleware/index');
-const {MongoDBConnect} = require('./connections')
+const { MongoDBConnect } = require('./connections')
 
 // Connect mongodb using below URL
 MongoDBConnect("mongodb://127.0.0.1:27017/mytestdb")

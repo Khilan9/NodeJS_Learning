@@ -13,8 +13,8 @@ router.get("/", async (req, res) => {
 });
 
 router.route("/api")
-        .get(GetAllUsersApi)
-        .post(createUserAPI);
+  .get(GetAllUsersApi)
+  .post(createUserAPI);
 
 router
   .route("/api/:id")

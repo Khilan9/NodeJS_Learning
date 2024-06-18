@@ -27,7 +27,7 @@ async function createUserAPI(req, res) {
 }
 
 
-async function handleGetUserByID (req, res) {
+async function handleGetUserByID(req, res) {
   const userbyid = await User.findById(req.params.id);
   // const user = users.find((user) => user.id == id);
   return res.send(userbyid);
@@ -38,7 +38,7 @@ async function handlePutUserByID(req, res) {
   return res.json({ msg: "patch done" });
 }
 
-async function handleDeleteUserByID (req, res) {
+async function handleDeleteUserByID(req, res) {
   await User.findByIdAndDelete(req.params.id, { fname: "changing static" });
   return res.json({ msg: "delete done" });
 }

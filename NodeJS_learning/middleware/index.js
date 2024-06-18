@@ -5,12 +5,12 @@ function useURLEncoder() {
     return express.urlencoded({ extended: false });
 }
 
-function Middleware1(req, res, next){
+function Middleware1(req, res, next) {
     console.log("Middleware 1 logged");
     next()
 }
 
-function Middleware2(req, res, next){
+function Middleware2(req, res, next) {
     console.log("Middleware 2 logged");
     next()
 }

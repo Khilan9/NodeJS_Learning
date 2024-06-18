@@ -17,5 +17,5 @@ async function MongoDBConnect(url) {
 }
 
 module.exports = {
-    MongoDBConnect,
+  MongoDBConnect,
 }
