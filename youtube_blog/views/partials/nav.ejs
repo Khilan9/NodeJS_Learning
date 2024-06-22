@@ -21,17 +21,17 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
             </ul>
-          </li> 
-        
-        <% } else {%>
-          <li class="nav-item">
-            <a class="nav-link" href="/user/signup">Signup</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/user/signin">Signin</a>
-          </li>
-        <% } %>
-        
+
+          <% } else {%>
+            <li class="nav-item">
+              <a class="nav-link" href="/user/signup">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/user/signin">Signin</a>
+            </li>
+            <% } %>
+
 
       </ul>
     </div>
@@ -41,5 +41,5 @@
 <% if (locals.error) { %>
   <div class="alert alert-danger" role="alert">
     <%= locals.error %>
-  </div> 
-<% } %>
+  </div>
+  <% } %>
