@@ -23,6 +23,5 @@ You can find the code that can be helpful to learn node js in this repo.
 - [Node JS Playlist](https://www.youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo)
 - [JWT](https://jwt.io/)
 - [socket.io](https://socket.io/)
-
-
-
+- [nginx basic command](https://gist.github.com/piyushgarg-dev/b2085fad5400ec71840c2e8b7d782d44#file-install_nginx-md)
+- [steps to deploy app on aws with nginx](https://gist.github.com/piyushgarg-dev/8b14c87c8ff4d626ecbc747b6b9fc57f)
