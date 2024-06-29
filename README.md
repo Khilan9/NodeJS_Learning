@@ -21,6 +21,7 @@ You can find the code that can be helpful to learn node js in this repo.
 ## References
 
 - [Node JS Playlist](https://www.youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo)
+- [Node JS Codevolution](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [JWT](https://jwt.io/)
 - [socket.io](https://socket.io/)
 - [nginx basic command](https://gist.github.com/piyushgarg-dev/b2085fad5400ec71840c2e8b7d782d44#file-install_nginx-md)
