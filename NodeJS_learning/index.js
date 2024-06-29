@@ -1,3 +1,4 @@
 const modulecheck = require('./1_module_example')
 
-console.log(modulecheck.add(2,3))
+const { sub, add } = modulecheck;
+console.log(add(2,3))
