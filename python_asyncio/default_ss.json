@@ -1,0 +1,8 @@
+[
+    { "name": "High Scale EA Backfill", "app_name": "itsi" },
+    {
+      "name": "Entity Lifecycle Management - Unmark Retirable Search",
+      "app_name": "itsi"
+    },
+    { "name": "itsi_event_grouping", "app_name": "SA-ITOA" }
+  ]

@@ -1,0 +1,43 @@
+{
+    "_owner": "nobody",
+    "job_type": "Backup",
+    "backup_type": "$BACKUP_TYPE$",
+    "is_configured": 0,
+    "include_conf_files": $INCLUDE_CONF$,
+    "partial_backup_settings": {
+      "dep_services": true,
+      "entities": false,
+      "linked_templates": false,
+      "base_searches": true,
+      "threshold_templates": true,
+      "teams": true
+    },
+    "rules": [],
+    "default_scheduled_backup_key": "",
+    "selected_services": [],
+    "selected_templates": [],
+    "selected_teams": [],
+    "selected_glass_tables": [],
+    "selected_deep_dives": [],
+    "selected_correlation_searches": [],
+    "selected_neaps": [],
+    "selected_entity_types": [],
+    "selected_service_analyzers": [],
+    "selected_episode_reviews": [],
+    "selected_macros": [],
+    "selected_saved_searches": [],
+    "splunk_server": "",
+    "title": "$NAME$",
+    "description": "",
+    "last_error": "None",
+    "search_head_id": "",
+    "scheduled": 0,
+    "enabled": 0,
+    "other_app_objects": {
+        "macros": [],
+        "savedsearches": [],
+        "missing_objects":{}
+    },
+    "identifying_name": "$NAME$",
+    "include_other_app_conf_files": $INCLUDE_CONF$
+  }

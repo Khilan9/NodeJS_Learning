@@ -1,0 +1,24 @@
+Threading: Use when there is data sharing is there in the programme and more i/o bound tasks are there.
+
+Asyncio: Use when there are tasks that needs to "wait" a lot with minimal CPU usage.
+
+Processing: Use when we have heavy CPU bound tasks.
+
+
+========================================= Asyncio =========================================
+
+1. event loop:  handles asynchronous tasks, when a task needs to be executed it enters event loop
+                if the task is waiting for something then loop will allow next task to enter and start work
+                if the awaiting tasks completes execution then it will be executed and thus handling of the
+                async tasks happens
+
+
+asyncio.gather: not expert at error handling, it does not cancle other routines if one of them fails
+
+asyncio.TaskGroup: Better at error handling and exits all co routine if one of them fails
+                   It locks the block when we use it as "async with asyncio.TaskGroup()"
+                   when it comes out all the coroutine has been completed execution
+
+Why the Difference?
+await: Causes the current coroutine to pause, allowing other coroutines in the event loop to run, but it waits for the specific coroutine to complete before continuing.
+asyncio.create_task(): Schedules the coroutine to run concurrently. The program doesn't wait for the task to finish before it continues executing the next line of code.
