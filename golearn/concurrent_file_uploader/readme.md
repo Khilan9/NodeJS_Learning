@@ -1,0 +1,3 @@
+1. configure VM details in main.go with appropriate host,port,username and password
+2. Run this file using go run main.go /opt/user123.txt /opt/data_acc_test.go /opt/user123.txt /opt/user123.txt /opt/user123.txt /opt/user123.txt /opt/user123.txt /opt/user123.txt /opt/user123.txt /opt/user123.txt
+3. here there is implementation in 2 ways where one is related to shared client connection and other is using n connections for n files
