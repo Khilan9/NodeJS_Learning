@@ -1,3 +1,4 @@
+
 /** Experiment 1 - all user written JavaScript code takes priority over async code that the runtime would like to execute */
 
 // console.log("console.log 1");
@@ -29,7 +30,7 @@
 // process.nextTick(() => console.log("this is process.nextTick 1"));
 // process.nextTick(() => {
 //   console.log("this is process.nextTick 2");
-//   process.nextTick(() => consol.log("this is the inner next tick inside next tick"));
+//   process.nextTick(() => console.log("this is the inner next tick inside next tick"));
 // });
 // process.nextTick(() => console.log("this is process.nextTick 3"));
 
@@ -163,13 +164,13 @@
 
 /** Experiment 12 - Microtask queues callbacks are executed inbetween check queue callbacks  */
 
-// setImmediate(() => console.log("this is setImmediate 1"));
-// setImmediate(() => {
-//   console.log("this is setImmediate 2");
-//   process.nextTick(() => console.log("this is process.nextTick 1"));
-//   Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
-// });
-// setImmediate(() => console.log("this is setImmediate 3"));
+setImmediate(() => console.log("this is setImmediate 1"));
+setImmediate(() => {
+  console.log("this is setImmediate 2");
+  process.nextTick(() => console.log("this is process.nextTick 1"));
+  Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+});
+setImmediate(() => console.log("this is setImmediate 3"));
 
 /** Experiment 13 - Timer anamoly. Order of execution can never be guaranteed */
 
